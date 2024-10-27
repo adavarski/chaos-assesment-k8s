@@ -82,6 +82,5 @@ Add GITHUB_USERNAME & GITHUB_TOCKEN variables
 - Repo Actions secrets and variables -> Add GHAT variable with value above PAT
 - Repo Settings -> Actions -> Genreal -> Workflow permissions -> Check Read and write permissions & Allow GH Actions to approve PR
 
-GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart (Image Tag -> for example: ArgoCD to use it: `infra repo:helm charts` and do CD -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground && https://github.com/adavarski/homelab
-
+GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart
 
