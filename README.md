@@ -63,8 +63,8 @@ docker run -d -p 8080:8080 hello-app
 #### 4. Test endpoints:
 
 ```
-$ curl "http://localhost:8080/greet?name=adavarski"
-{"message":"Hello adavarski!"}
+$ curl "http://localhost:8080/greet?name=John"
+{"message":"Hello John!"}
 
 $ curl "http://localhost:8080/greet"
 {"message":"Now everyone can be a hero..."}
