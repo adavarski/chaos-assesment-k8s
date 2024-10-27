@@ -98,7 +98,7 @@ K8s is Kubernetes. K3s is a lightweight K8s distribution. K3d is a wrapper to ru
 
 ### GitHub Actions configure
 
-Add GITHUB_USERNAME & GITHUB_TOKEN & GHAT repo variables
+Add GITHUB_USERNAME & DOCKERHUB_TOKEN & GHAT repo variables
 
 GHAT notes:
 
