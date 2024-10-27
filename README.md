@@ -61,8 +61,21 @@ docker run -d -p 8080:8080 hello-app
 #### 4. Test endpoints:
 
 ```
-          python -m pytest
 
+$ docker ps -a
+CONTAINER ID   IMAGE       COMMAND            CREATED         STATUS         PORTS                                       NAMES
+3119554a49c7   hello-app   "python3 app.py"   7 seconds ago   Up 5 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   nostalgic_pascal
+
+
+ $ docker exec -it 3119554a49c7 python -m pytest
+=============================================================================================== test session starts ===============================================================================================
+platform linux -- Python 3.10.15, pytest-8.3.3, pluggy-1.5.0
+rootdir: /app
+collected 3 items                                                                                                                                                                                                 
+
+tests/test_health.py ...                                                                                                                                                                                    [100%]
+
+================================================================================================ 3 passed in 0.02s ================================================================================================
 ```
 
 
