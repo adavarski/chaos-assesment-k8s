@@ -131,6 +131,10 @@ GHAT notes:
 - Repo Actions secrets and variables -> Add GHAT variable with value above PAT
 - Repo Settings -> Actions -> Genreal -> Workflow permissions -> Check Read and write permissions & Allow GH Actions to approve PR
 
-### GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart
+### GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart:
+
+[![CICD](https://github.com/adavarski/chaos-assesment-k8s/workflows/CICD/badge.svg)](https://github.com/adavarski/chaos-assesment-k8s/actions)
+
+
 
 Note: Use ArgoCD & helm example: -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground 
