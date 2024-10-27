@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   pullPolicy: IfNotPresent
   repository: davarski/demo-gh-actions
-  version: main-ab80833
+  version: main-66a8df6
 
 imagePullSecrets: []
 nameOverride: ""
