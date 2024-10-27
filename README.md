@@ -34,7 +34,7 @@ Add a CI/CD pipeline script (e.g., GitHub Actions, Jenkins, Gitlab) that builds 
 
 -------------------------
 Create Helm chart for app
-Deploy app to k8s (k3d)
+Deploy app to k8s (k3d) using Helm Chart
 ```
 Task steps:
 
