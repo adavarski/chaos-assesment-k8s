@@ -74,20 +74,24 @@ OK
 
 
 
-$ docker ps -a
-CONTAINER ID   IMAGE       COMMAND            CREATED         STATUS         PORTS                                       NAMES
-3119554a49c7   hello-app   "python3 app.py"   7 seconds ago   Up 5 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   nostalgic_pascal
+ docker ps -a
+CONTAINER ID   IMAGE       COMMAND            CREATED          STATUS          PORTS                                       NAMES
+b560839c5122   hello-app   "python3 app.py"   18 seconds ago   Up 17 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   practical_faraday
 
 
- $ docker exec -it 3119554a49c7 python -m pytest
+
+ $ docker exec -it b560839c5122 python -m pytest
 =============================================================================================== test session starts ===============================================================================================
 platform linux -- Python 3.10.15, pytest-8.3.3, pluggy-1.5.0
 rootdir: /app
 collected 3 items                                                                                                                                                                                                 
 
-tests/test_health.py ...                                                                                                                                                                                    [100%]
+tests/test_health.py .                                                                                                                                                                                      [ 33%]
+tests/test_index.py .                                                                                                                                                                                       [ 66%]
+tests/test_name.py .                                                                                                                                                                                        [100%]
 
 ================================================================================================ 3 passed in 0.02s ================================================================================================
+
 Explanation of Each Test
 
 Sends a request to /greet with name=John.
