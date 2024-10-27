@@ -80,7 +80,7 @@ tests/test_health.py ...                                                        
 
 
 
-### GitHub Actions k8s demo: k3d & helm playground
+### GitHub Actions: k8s (k3d) & helm playground
 
 This is a demo of how K3d can be used as part of a GitHub Actions Workflow for testing Helm charts.
 
