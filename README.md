@@ -90,7 +90,7 @@ tests/test_health.py ...                                                        
 
 
 
-### GitHub Actions: k8s (k3d) & helm playground
+### GitHub Actions: k8s (k3d) & helm deploy
 
 This is a demo of how K3d can be used as part of a GitHub Actions Workflow for testing Helm charts.
 
@@ -99,7 +99,9 @@ K8s is Kubernetes. K3s is a lightweight K8s distribution. K3d is a wrapper to ru
 
 ### GitHub Actions configure
 
-Add GITHUB_USERNAME & GITHUB_TOKEN variables
+Add GITHUB_USERNAME & GITHUB_TOKEN & GHAT variables
+
+GHAT notes:
 
 - Settings -> Developer settings -> Personal access tokens -> Create GHAT
 - Repo Actions secrets and variables -> Add GHAT variable with value above PAT
