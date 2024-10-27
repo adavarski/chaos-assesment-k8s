@@ -2,7 +2,7 @@
 
 This is a demo of how K3d can be used as part of a GitHub Actions Workflow for testing Helm charts.
 
-[![CICD](https://github.com/adavarski/k3d-GH-Actions/workflows/CICD/badge.svg)](https://github.com/adavarski/k3d-GH-Actions/actions)
+[![CICD](https://github.com/adavarski/chaos-assesment-k8s/workflows/CICD/badge.svg)](https://github.com/adavarski/chaos-assesment-k8s/actions)
 
 K8s is Kubernetes. K3s is a lightweight K8s distribution. K3d is a wrapper to run K3s in Docker. K3d/K3s are especially good for development and CI purposes, as it takes only 20-30 seconds of time till the cluster is ready (for comparison, Kind/Minikube takes more time till ready)
 
