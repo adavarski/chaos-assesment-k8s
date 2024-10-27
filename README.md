@@ -133,3 +133,4 @@ GHAT notes:
 
 GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart
 
+ArgoCD to use helm : -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground 
