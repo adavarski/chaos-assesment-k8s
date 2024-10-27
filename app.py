@@ -4,9 +4,9 @@ from waitress import serve
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/greet")
 def index():
-    return "<p>Test CI/CD</p>"
+    return "<p>Now everyone can be a hero...</p>"
 
 
 @app.route("/health")
