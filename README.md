@@ -19,33 +19,5 @@ Defines two endpoints, /greet and /health.
 /greet returns a personalized greeting or a default message if the name parameter is missing.
 /health checks the server status, returning {"status": "ok"} for monitoring.
 
-#### 2. Dockerize the Application (File: Dockerfile)
-
-Note: Uses python:3.9-slim for a smaller image. Installs Flask and sets up the /app directory. Exposes port 8080 and runs app.py.
-
-#### 3. Build and Run the Docker Container
-
-Build the Docker image:
-
-```
-docker build -t hello-app .
-```
-Run the Docker container:
-
-```
-docker run -d -p 8080:8080 hello-app
-```
-#### 4. Test endpoints:
-
-Use curl for testing:
-```
-$ curl "http://localhost:8080/greet?name=adavarski"
-{"message":"Hello adavarski!"}
-
-$ curl "http://localhost:8080/greet"
-{"message":"Now everyone can be a hero..."}
-
-$ curl "http://localhost:8080/health"
-{"status":"ok"}
 ```
 
