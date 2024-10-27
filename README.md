@@ -121,7 +121,7 @@ Verifies the response data is exactly "OK" as a byte string.
 
 K8s is Kubernetes. K3s is a lightweight K8s distribution. K3d is a wrapper to run K3s in Docker. K3d/K3s are especially good for development and CI purposes, as it takes only 20-30 seconds of time till the cluster is ready (for comparison, Kind/Minikube takes more time till ready)
 
-### GitHub Actions configure
+### GitHub Actions (configure variables)
 
 Add DOCKERHUB_USERNAME & DOCKERHUB_TOKEN & GHAT repo variables
 
@@ -131,6 +131,6 @@ GHAT notes:
 - Repo Actions secrets and variables -> Add GHAT variable with value above PAT
 - Repo Settings -> Actions -> Genreal -> Workflow permissions -> Check Read and write permissions & Allow GH Actions to approve PR
 
-GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart
+### GH Actions workflow: Test Python Code -> Build/Push Image ->  Deploy/Test Helm Chart on K8s -> Update Helm Chart
 
-ArgoCD to use helm : -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground 
+Note: Use ArgoCD & helm example: -> Ref: https://github.com/adavarski/ArgoCD-GitOps-playground 
