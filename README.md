@@ -88,6 +88,23 @@ collected 3 items
 tests/test_health.py ...                                                                                                                                                                                    [100%]
 
 ================================================================================================ 3 passed in 0.02s ================================================================================================
+Explanation of Each Test
+
+Sends a request to /greet with name=John.
+Checks if the status code is 200 (OK).
+Ensures the response is JSON and matches {"message": "Hello John!"}.
+test_greet_without_name:
+
+Sends a request to /greet without the name query parameter.
+Checks if the status code is 200 (OK).
+Ensures the response is JSON and matches {"message": "Now everyone can be a hero..."}.
+test_health:
+
+Sends a request to /health.
+Checks if the status code is 200 (OK).
+Verifies the response data is exactly "OK" as a byte string.
+
+
 ```
 
 
