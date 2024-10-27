@@ -93,15 +93,18 @@ tests/test_name.py .                                                            
 ================================================================================================ 3 passed in 0.02s ================================================================================================
 
 Explanation of Each Test
+test_greet_with_name:
 
 Sends a request to /greet with name=John.
 Checks if the status code is 200 (OK).
 Ensures the response is JSON and matches {"message": "Hello John!"}.
+
 test_greet_without_name:
 
 Sends a request to /greet without the name query parameter.
 Checks if the status code is 200 (OK).
 Ensures the response is JSON and matches {"message": "Now everyone can be a hero..."}.
+
 test_health:
 
 Sends a request to /health.
